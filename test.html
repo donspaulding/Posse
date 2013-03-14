@@ -1,0 +1,12 @@
+<html>
+	<body>
+		<p id="fubar"></p>
+		<script src="/posse.js"></script>
+		<script>
+			p = new Posse();
+			p.on('server-time', function(data){
+				document.getElementById("fubar").innerHTML = data.time;
+			});
+		</script>
+	</body>
+</html>
